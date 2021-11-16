@@ -28,10 +28,13 @@ buttongbup.addEventListener('click',function(){
 let buttongbdown = document.querySelector("#minus-gb")
 buttongbdown.addEventListener('click',function(){
     console.log('gb minus button was pressed')
-    gb = gb - 1
-    qtygb.textContent = gb
-    total = total - 1
-    qtytotal.textContent = total
+    if (gb > 0)
+    {
+        gb = gb - 1
+        qtygb.textContent = gb
+        total = total - 1
+        qtytotal.textContent = total
+    }
 })
 
 let buttonccup = document.querySelector("#add-cc")
@@ -46,10 +49,15 @@ buttonccup.addEventListener('click',function(){
 let buttonccdown = document.querySelector("#minus-cc")
 buttonccdown.addEventListener('click',function(){
     console.log('cc minus button was pressed')
-    cc = cc - 1
-    qtycc.textContent = cc
-    total = total - 1
-    qtytotal.textContent = total
+    if (cc > 0)
+    {   
+        cc = cc - 1
+        qtycc.textContent = cc
+        total = total - 1
+        qtytotal.textContent = total
+
+    }
+    
 })
 
 let buttonsugarup = document.querySelector("#add-sugar")
@@ -64,8 +72,13 @@ buttonsugarup.addEventListener('click',function(){
 let buttonsugardown = document.querySelector("#minus-sugar")
 buttonsugardown.addEventListener('click',function(){
     console.log('sugar minus button was pressed')
-    sugar = sugar - 1
-    qtysugar.textContent = sugar
-    total = total - 1
-    qtytotal.textContent = total
+    if(sugar > 0)
+    {   
+        sugar = sugar - 1
+        qtysugar.textContent = sugar
+        total = total - 1
+        qtytotal.textContent = total
+
+    }
+    
 })
